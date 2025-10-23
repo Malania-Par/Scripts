@@ -1,0 +1,8 @@
+---Group Users'---
+SELECT u.FirstName, u.LastName, u.EmailAddress, u.UserName, 'Role' = gr.[Name], u.Active 
+
+FROM [GROUP_Five_Guys].[dbo].[GroupUserRoles] gusr
+JOIN [GROUP_Five_Guys].[dbo].[GroupRole] gr ON gr.Id = gusr.RoleId
+JOIN [PosGlobal].[dbo].[User] u on u.Id = gusr.UserId 
+
+WHERE gr.[Name] like 'Delivery Admin' order by FirstName

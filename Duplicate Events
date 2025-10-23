@@ -1,0 +1,6 @@
+select source_sequence , count(*)
+from isfs.journals 
+where group_id = 'bbef5680-1352-4a15-9838-8a25447e99a8' 
+and location_id = '739652dc-fb50-4629-9d85-e9788e7ed852' and businessdate = '2025-05-06'
+group by source_sequence  
+having count(*) >1

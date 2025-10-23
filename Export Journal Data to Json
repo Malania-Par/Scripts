@@ -1,0 +1,16 @@
+export journal data in pretty json
+
+
+void Main()
+{
+    var maxlength = 400;
+    var first_journal = Journals.Take(maxlength);
+
+    var rawJson = new JavaScriptSerializer().Serialize(first_journal);
+
+    // Use JObject to pretty-print
+    var parsedJson = Newtonsoft.Json.Linq.JToken.Parse(rawJson);
+    var formattedJson = parsedJson.ToString(Newtonsoft.Json.Formatting.Indented);
+
+    formattedJson.Dump();
+}

@@ -1,0 +1,8 @@
+--CHANGESET AUDIT---
+SELECT l.PackageId, p.Name, l.LocationId, l.StatusTimestamp, g.Name, u.UserName
+FROM [GROUP_The_Balanced_Chef_iPOS].[dbo].[ChangeSetPackage] p
+JOIN [GROUP_The_Balanced_Chef_iPOS].[dbo].[ChangeSetPackageLocation] l ON p.Id = l.PackageId
+JOIN [PosGlobal].[dbo].[Location] g ON l.LocationId = g.Id
+JOIN [PosGlobal].[dbo].[User] U ON U.Id = P.UserId
+WHERE p.Name like ' '
+AND l.Status = 10

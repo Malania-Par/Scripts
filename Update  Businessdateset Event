@@ -1,0 +1,55 @@
+/*Update Businessdateset event--------------------*/
+UPDATE
+    [POS_Burger_King_BK14576FLPompano_BeachCorp]..[Journal]
+SET 
+    [Data] = '<Event Type="BusinessDateSet" BusinessDate="2024-07-11" Created="2024-07-11 08:03:46Z" EmployeeId="654235813" FormatVersion="49.036" TerminalId="1" Version="49.036">
+        <ContinuingShifts>
+          <ContinuingShift BusinessDate="2024-07-10 00:00:00" StartTime="2024-07-11 04:01:50Z" EmployeeId="654235813" Id="8a1a021f-2fb1-466a-b60f-b8ec12e64650" JobId="25" ModifiedTime="2024-07-11 04:01:50+00:00 +00:00" Number="5" PayPeriodId="" PayRate="14">
+            <Edits>
+              <Edit EditedByEmployeeId="654235813" EditTime="2024-07-11 04:01:50+00:00 +00:00" Field="None" Reason="ClockIn" />
+            </Edits>
+          </ContinuingShift>
+          <ContinuingShift BusinessDate="2024-07-10 00:00:00" StartTime="2024-07-11 02:03:39Z" EmployeeId="654235818" Id="dafbe145-3a4c-4418-acf8-c3f982be009a" JobId="26" ModifiedTime="2024-07-11 02:03:39+00:00 +00:00" Number="1" PayPeriodId="" PayRate="12.5">
+            <Edits>
+              <Edit EditedByEmployeeId="654235818" EditTime="2024-07-11 02:03:39+00:00 +00:00" Field="None" Reason="ClockIn" />
+            </Edits>
+          </ContinuingShift>
+          <ContinuingShift BusinessDate="2024-07-01 00:00:00" StartTime="2024-07-01 10:10:23Z" EmployeeId="654235825" Id="44be8ecd-1fdf-4103-9b7c-0f9b8ffcb352" JobId="654228749" ModifiedTime="2024-07-01 10:10:23+00:00 +00:00" Number="11" PayPeriodId="">
+            <Edits>
+              <Edit EditedByEmployeeId="654235825" EditTime="2024-07-01 10:10:23+00:00 +00:00" Field="None" Reason="ClockIn" />
+            </Edits>
+          </ContinuingShift>
+        </ContinuingShifts>
+        <RerouteKitchenQueueDetails>
+          <RerouteKitchenQueueDetail KitchenTerminalId="640217511" ToKitchenQueueId="0" />
+          <RerouteKitchenQueueDetail KitchenTerminalId="649445755" ToKitchenQueueId="0" />
+          <RerouteKitchenQueueDetail KitchenTerminalId="649445754" ToKitchenQueueId="0" />
+          <RerouteKitchenQueueDetail KitchenTerminalId="654227469" ToKitchenQueueId="0" />
+          <RerouteKitchenQueueDetail KitchenTerminalId="673511804" ToKitchenQueueId="0" />
+          <RerouteKitchenQueueDetail KitchenTerminalId="673514551" ToKitchenQueueId="649445754" />
+          <RerouteKitchenQueueDetail KitchenTerminalId="673514549" ToKitchenQueueId="649445754" />
+          <RerouteKitchenQueueDetail KitchenTerminalId="673514550" ToKitchenQueueId="0" />
+          <RerouteKitchenQueueDetail KitchenTerminalId="673514553" ToKitchenQueueId="649445754" />
+          <RerouteKitchenQueueDetail KitchenTerminalId="673514552" ToKitchenQueueId="0" />
+          <RerouteKitchenQueueDetail KitchenTerminalId="673515120" ToKitchenQueueId="0" />
+          <RerouteKitchenQueueDetail KitchenTerminalId="673515122" ToKitchenQueueId="0" />
+          <RerouteKitchenQueueDetail KitchenTerminalId="673515121" ToKitchenQueueId="0" />
+          <RerouteKitchenQueueDetail KitchenTerminalId="673516548" ToKitchenQueueId="0" />
+          <RerouteKitchenQueueDetail KitchenTerminalId="673516549" ToKitchenQueueId="0" />
+        </RerouteKitchenQueueDetails>
+        <EmployeeJobs>
+          <EmployeeJob Id="1" JobId="654228749" SecurityLevelId="2" />
+          <EmployeeJob Id="1" JobId="25" SecurityLevelId="2" PayRate="14" />
+          <EmployeeJob Id="1" JobId="26" SecurityLevelId="640217644" PayRate="12.5" />
+          <EmployeeJob Id="1" JobId="654228749" SecurityLevelId="2" />
+        </EmployeeJobs>
+        <OrderConfirmationDisplayDetails>
+          <OrderConfirmationDisplayDetail OcdId="673518605">
+            <claimableRegisterIds>
+              <claimableRegisterId Value="673512584" />
+            </claimableRegisterIds>
+          </OrderConfirmationDisplayDetail>
+        </OrderConfirmationDisplayDetails>
+      </Event>'
+WHERE
+    [ID] = 1312850 and [Businessdate] = '2024-07-11'
